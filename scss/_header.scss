@@ -1,0 +1,104 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background-color: $color-1;
+        div {
+        display: flex;
+        width: 60px;
+            img{
+            width: 100%;
+            border-radius: 50%;
+            }
+        }
+        nav{
+        display: flex;
+        justify-content: flex-end;
+            ul {
+            display: flex;
+            list-style-type: none;
+                li {
+                display: flex;
+                border-radius: 5px;
+                position: relative;
+                margin-left: 10px;
+                color: $color-2;
+                cursor: pointer;
+                padding: 10px 30px;
+                text-align: center;
+                width: max-content;
+                &:hover{
+                display: block;
+                background-color: #555556;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                }
+                    a{
+                    text-decoration: none;
+                    color: $color-2;
+                }
+                ul{
+                    position: absolute;
+                    display: none;
+                    background-color: #555556;
+                    padding: 5px 10px;
+                    margin: 0 0 0 -30px;
+                    border-radius: 4px;
+                    width: 139px;
+                    li{
+                        display: flex;
+                        padding: 4px 4px;
+                        border-radius: 3px;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                }
+            }
+        }
+        label{
+            display: none;
+        }
+        .inputMenu{
+            display: none;
+        }
+        .hidden{
+            display: none;
+        }
+
+}
+
+/*SUBMENU*/
+header{
+    nav ul li ul{
+    position: absolute;
+    display: none;
+    background-color: #555556;
+    padding: 5px 10px;
+    margin: 0 0 0 -30px;
+    border-radius: 4px;
+    width: 139px;
+    &:hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+                    li{
+                    display: flex;
+                    padding: 4px 4px;
+                    border-radius: 3px;
+                    align-items: center;
+                    justify-content: center;
+                    }
+}

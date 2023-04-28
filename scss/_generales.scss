@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto-condensed', cursive;
+}
+
+@mixin flex-column-center-space-evenly{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@mixin flex-space-evenly-calc{
+    display: flex;
+    justify-content: space-evenly;
+    height: calc(100vh - 130px);
+}
+
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin grid-auto{
+    display: grid;
+    height: auto;
+}
+

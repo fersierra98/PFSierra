@@ -1,0 +1,71 @@
+main {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: $color-2;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.producto {
+    @include sizes (20vw, 30vw);
+    border: 1px solid $color-1;
+    @include flex-column-center-space-evenly;
+    border-radius: 10px;
+    font-weight: 400;
+    background: linear-gradient(180deg, rgba(163, 163, 163, 0.5), rgb(255, 115, 115, 0.5));
+    margin-top: 70px;
+    overflow: hidden;
+
+    &:hover {
+        transform: scale(1.2, 1.2);
+    }
+
+    h2 {
+        font-size: 1.8vw;
+        font-weight: 400;
+    }
+}
+
+.producto-imagen {
+    padding: 10px 0;
+    @include sizes (100%, 60%);
+
+    img {
+        width: 90%;
+        object-fit: cover;
+        aspect-ratio: 4/4;
+    }
+}
+
+.producto-texto {
+    font-weight: 400;
+    height: 40%;
+    @include flex-column-center-space-evenly;
+
+    h2 {
+        font-size: 1.8vw;
+        padding: 0 5px;
+        text-decoration: underline;
+    }
+
+    p {
+        text-decoration: line-through;
+    }
+
+    h3 {
+        font-size: 1.5vw;
+    }
+}
+
+.productos-main {
+    display: flex;
+}
+
+.botines {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+

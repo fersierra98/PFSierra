@@ -1,0 +1,20 @@
+$color-1: #1c1c1c;
+$color-2: white;
+
+/*CONDICIONALES*/
+$mode: none;
+
+@if $mode == oscuro {
+    #main-index{
+        background-color: black;
+    }
+}@else if $mode == claro{
+    #main-index{
+        background-color: aqua;
+    }
+}
+@else{
+    #main-index{
+        background-color: white;
+    }
+}

@@ -1,0 +1,42 @@
+/*accesorios*/
+.accesorios{
+    @include flex-space-evenly-calc;
+}
+
+/*indumentaria*/
+.indumentaria{
+    @include flex-space-evenly-calc;
+}
+
+/*nosotros*/
+.nosotros-main{
+    @include flex-space-evenly-calc;
+    padding-bottom: 707px;
+}
+.nosotros-main-texto{
+    h4{
+        padding-top: 90px;
+    }
+    p{
+        padding: 20px 20px 171px 20px;
+    }
+}
+
+/*contacto*/
+.contacto-main{
+    @include flex-space-evenly-calc;
+    padding: 200px 40px 657px 40px;
+}
+fieldset {
+    display: block;
+    gap: 20px;
+    padding-block-start: 1em;
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
+    padding-block-end: 1em;
+    min-inline-size: min-content;
+    border-width: 3px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+}
