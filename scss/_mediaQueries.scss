@@ -43,6 +43,12 @@
         div{
             width: 25px;
         }
+        .categorys-li{
+            display: none;
+        }
+        .hidden{
+            display: flex;
+        }
     }
     .inputMenu:checked + nav {
         transform: translateX(0);
@@ -83,12 +89,14 @@
         padding-top: 50px;
         padding-bottom: 50px;
         padding-left: 100px;
+        padding-right: 100px;
     }
     /*BOTINES*/
     .botines-main{
         padding-top: 50px;
         padding-bottom: 50px;
         padding-left: 100px;
+        padding-right: 100px;
     }
     /*INDUMENTARIA*/
     .indumentaria{
@@ -159,11 +167,13 @@
         padding-top: 50px;
         padding-bottom: 50px;;
         padding-left: 190px;
+        padding-right: 190px;
     }
     .productos-main{
         padding-top: 50px;
         padding-bottom: 50px;;
         padding-left: 190px;
+        padding-right: 190px;
     }
 }
 

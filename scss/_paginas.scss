@@ -10,33 +10,77 @@
 
 /*nosotros*/
 .nosotros-main{
-    @include flex-space-evenly-calc;
-    padding-bottom: 707px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
 }
 .nosotros-main-texto{
     h4{
-        padding-top: 90px;
+        padding-top: 50px;
+    }
+    h7{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    h8{
+        font-weight: bold;
+        font-size: 16px;
     }
     p{
-        padding: 20px 20px 171px 20px;
+        padding: 20px 50px 100px 50px;
     }
 }
 
 /*contacto*/
-.contacto-main{
-    @include flex-space-evenly-calc;
-    padding: 200px 40px 657px 40px;
+
+.encabezado-img{
+    background-image: url(../img/cesped.jpg);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-2;
+    margin-top: 50px;
 }
-fieldset {
-    display: block;
-    gap: 20px;
-    padding-block-start: 1em;
-    padding-inline-start: 1em;
-    padding-inline-end: 1em;
-    padding-block-end: 1em;
-    min-inline-size: min-content;
-    border-width: 3px;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
-    border-image: initial;
+
+.form-register{
+    width: 400px;
+    background: $color-1;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    color: $color-2;
+        h4{
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .botons{
+            width: 100%;
+            background: #1f53c5;
+            border: none;
+            padding: 12px;
+            color: $color-2;
+            margin: 16px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+}
+.controls{
+    width: 100%;
+    background: $color-2;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    font-family: 'roboto-condensed', cursive;
+}
+
+/*Todos los Productos*/
+.row>*{
+    display: flex;
+    justify-content: center;
 }

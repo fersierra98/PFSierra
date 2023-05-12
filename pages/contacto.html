@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <meta name="description" content="Formulario de contacto" />
+    <meta
+      name="description"
+      content="Formulario de contacto. Escribinos tus comentarios, sugerencias o requerimientos y a la brevedad nos pondremos en contacto con vos"
+    />
     <meta
       name="keywords"
       content="botines, futbol, calzado, pelota, cesped, jugador"
@@ -16,6 +19,12 @@
       src="https://kit.fontawesome.com/aed3a2d5c6.js"
       crossorigin="anonymous"
     ></script>
+
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-32x32.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!--encabezado-->
@@ -50,32 +59,43 @@
       </nav>
     </header>
 
+    <div class="encabezado-img">
+      <h1>Contactanos</h1>
+    </div>
+
     <!--contenido principal-->
     <main class="contacto-main">
       <!--formulario-->
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Contacto</legend>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required />
-          <br />
-          <label for="apellido">Apellido:</label>
-          <input type="text" id="apellido" name="apellido" required />
-          <br />
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required />
-          <br />
-          <label for="mensaje">Mensaje:</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            rows="5"
-            cols="40"
-            required
-          ></textarea>
-          <input type="submit" value="Enviar" />
-        </fieldset>
-      </form>
+      <section class="form-register">
+        <h4>Contactate con nosotros</h4>
+        <input
+          class="controls"
+          type="text"
+          name="nombres"
+          id="nombres"
+          placeholder="Ingrese su Nombre"
+        />
+        <input
+          class="controls"
+          type="text"
+          name="apellidos"
+          id="apellidos"
+          placeholder="Ingrese su Apellido"
+        />
+        <input
+          class="controls"
+          type="text"
+          name="correo"
+          id="correo"
+          placeholder="Ingrese su Correo"
+        />
+        <textarea
+          class="controls"
+          name="mensaje"
+          placeholder="Escriba su Mensaje"
+        ></textarea>
+        <input class="botons" type="submit" value="Enviar" />
+      </section>
     </main>
 
     <!--pie de pagina-->
@@ -84,10 +104,26 @@
       <div class="grupo-1">
         <h2>Siguenos</h2>
         <div class="red-social">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-youtube"></a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="fa fa-instagram"
+          ></a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            class="fa fa-twitter"
+          ></a>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            class="fa fa-youtube"
+          ></a>
         </div>
       </div>
 
